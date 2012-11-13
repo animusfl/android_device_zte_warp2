@@ -16,7 +16,9 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-	$(LOCAL_PATH)/recovery/rmt_storage_recovery:recovery/root/sbin/rmt_storage_recovery
+	$(LOCAL_PATH)/recovery/rmt_storage_recovery:recovery/root/sbin/rmt_storage_recovery \
+	$(LOCAL_PATH)/recovery/ueventd.rc:recovery/root/ueventd.rc \
+	$(LOCAL_PATH)/recovery/usbconfig:recovery/root/sbin/usbconfig
 
 $(call inherit-product, build/target/product/full.mk)
 
