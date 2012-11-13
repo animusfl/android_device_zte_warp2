@@ -20,16 +20,16 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # SD Card
-BOARD_HAS_SDCARD_INTERNAL := true
+#BOARD_HAS_SDCARD_INTERNAL := true
 BOARD_USES_MMCUTILS := true
 
 # recovery
 TARGET_PREBUILT_KERNEL := device/zte/warp2/recovery/kernel
 #TARGET_RECOVERY_INITRC := device/zte/warp2/recovery/recovery.rc
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-ADDITIONAL_DEFAULT_PROPERTIES += ro.config.sec_storage=1
-ADDITIONAL_DEFAULT_PROPERTIES += persist.sys.usb.config=mass_storage
+#TARGET_RECOVERY_PIXEL_FORMAT := "RGB565"
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.config.sec_storage=1
+#ADDITIONAL_DEFAULT_PROPERTIES += persist.sys.usb.config=mass_storage
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
